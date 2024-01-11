@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* 기본스타일 초기화 및 reset css활용 */
+
+* {
+	margin: 0; /*m0+tab*/
+	padding: 0; /*p0+tab*/
+}
+
+a, a:link {
+	color: black;
+	text-decoration: none;
+}
+.container {
+	max-width: 1000px;
+}
+.mx-auto {
+	margin: 0 auto;
+}
+.pos-relative {
+	position: relative;
+}
+.text-center {
+	text-align: center;
+}
+.text-upper {
+	text-decoration: uppercase;
+}
+.text-cap {
+	text-transform: capitalize;/*앞글자만 대문자  */
+}
+.mt-100 {
+	margin-top: 100px;
+}
+.my-100 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.py-80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+/*--------------------header----------------------*/
+#header {
+	background-color: rgba(32, 14, 37, 0.7);/*#200e25, 투명도70%와 같음(구글-color picker참고)*/
+	display: flow-root;
+	padding: 20px 0;
+}
+.header_wrap {
+	width: 1000px;
+	margin: 0 auto;	
+	display: flex;
+	justify-content: space-between;/*주축 정렬방법, 디스플레이-플렉스+@:알잘딱깔센 간격줌*/
+	/*between:옆에 잡고 가운데 두기, around:부모와 자식 간격 주고 왼 가 오 나눔 */
+	
+}
+.nav {
+	display: flex;
+	column-gap: 1.25rem;
+}
+.nav a, .member a{
+	text-transform: uppercase;	
+	color: #d6d6d6;
+}
+.nav a {
+	vertical-align: middle;/*수직-정렬,세로중앙  */
+	}
+.catalogue {
+	display: inline-block;
+	width: 120px;
+	background-image: url('../images/topicon.png'); /*..은 이 style.css.위치의 위위파일의 이미지를 표현  */
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 25px;
+	padding-left: 25px;
+}
+.member {
+	display: flex;
+	column-gap: 1rem;
+}
+.ad-bg {
+	height: 835px;
+	background-image: url('../images/visual_slogan.png'), url('../images/visual_bg.jpg');
+	background-position: center 60%, center center; /*글자사진, 사람사진 순서로 설정  */
+	background-repeat:no-repeat, no-repeat;
+	background-size: 446px, cover;
+	padding-left: 30px;
+}
+.h835 {
+	height: 835px;
+}
+.hot-item {
+	position: absolute;
+	right:0;
+	bottom: -40px;
+	}
+.promo {
+	background-image: url('../images/promotion_bg.gif');
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+.promo h2 { 
+	margin-bottom: 30px;
+	font-size: 30px;
+	color: #000000;
+	font-weight: 900;
+}	
